@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="minimum-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800&display=swap">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <title>Document</title>
+</head>
+<style>
+    .navbar {
+        position: absolute;
+        max-height: 300px;
+        display: flex;
+        margin: 1rem;
+        align-items: center;
+    }
+    
+    .logo {
+        margin-left: 20px;
+        width: 70px;
+        height: 40px;
+    }
+    
+    .toggler {
+        font-size: 1.5rem;
+        color: rgb(91, 8, 105);
+        z-index: 999;
+        transition: all .3s;
+    }
+    
+    .toggler:hover {
+        transform: scale(.9);
+        transition: all .3s;
+    }
+</style>
+
+<body>
+    <div class="sidebar">
+
+        <label for="check">
+        <i class="fas fa-times" class="cancel" id="cancel"></i>
+    </label>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Features</a></li>
+            <li><a href="">About Us </a></li>
+            <li><a href=""> Deals </a></li>
+            <div class="separator"></div>
+            <li><a href="">MERCHANTS</a></li>
+            <li><a href="">NEWS</a></li>
+            <li><a href="">CONTACT US</a></li>
+            <li><a href="">FAQ</a></li>
+            <div class="separator"></div>
+
+            <li><a href="">JOIN AS MERCHANT</a></li>
+            <div class="ovo-menu-social flex pl-8 ">
+                <a href="#" class="text-white iconcustom"><i class="fab fa-facebook-square"></i></a>
+                <a href="#" class="text-white iconcustom"><i class="fab fa-twitter-square"></i></a>
+                <a href="#" class="text-white iconcustom"><i class="fab fa-git-square"></i></a>
+                <a href="#" class="text-white iconcustom"><i class="fab fa-whatsapp-square"></i></a>
+            </div>
+        </ul>
+    </div>
+    <div class="overlay" id="overlay">
+
+    </div>
+    <header>
+        <nav>
+            <div class="mx-3 navbar items-center " id="navbar">
+
+                <a href="#" class="toggler ml-5" id="toggler"> <i class="fas fa-bars"></i> </a>
+                <img src="src/logo.png" alt="#" class="logo ">
+            </div>
+        </nav>
+    </header>
+    <section class="section-1">
+        <div class="flex justify-center">
+            <div class="section-1-kiri mt-32">
+                <div class=" sm:pr-40">
+                    <h1 class="ovo-hero-text ">Download OVO Sekarang dan Dapatkan Manfaatnya</h1>
+                    <h5 class="ovo-hero-texth5 ">OVO merupakan aplikasi smart yang memberikan Anda kesempatan lebih besar mengumpulkan poin di banyak tempat.</h5>
+                    <div class="ovo-store mt-5 flex ">
+                        <a href="# ">
+                            <img src="src/appstore.svg " alt=" " class="naik translate-y-6 ">
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=ovo.id&hl=en&gl=US ">
+                            <img src="src/gplay.svg " alt=" " class="naik inline ">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="section-1-kanan ">
+                <img src="src/landing-1.png " alt=" ">
+            </div>
+        </div>
+    </section>
+    <section class="section-2 bg-purple my-10 ">
+        <div class="flex justify-center w-full mx-6 customwrap ">
+            <div class="section-2-kiri px-5 ">
+                <img src="src/section 2 hero.png " class="lg:pl-16 lg:pt-10 lg:ml-16 " alt=" ">
+            </div>
+
+
+            <div class="section-2-kanan lg:mt-28 ">
+                <div class="icon-wrapper flex sec2custom ">
+                    <img src="src/section 2 circle.png " class="mr-3 opacitysetengah " alt=" ">
+                    <img src="src/sec22.png " class="mr-3 opacitysetengah " alt=" ">
+                    <img src="src/sec23.png " class="mr-3 opacitysetengah " alt=" ">
+                    <img src="src/sec24.png " class="mr-3 opacitysetengah " alt=" ">
+                    <img src="src/sec25.png " class="mr-3 opacitysetengah " alt=" ">
+                </div>
+                <div class="tab-pane mt-5 ">
+                    <h1 class="tab-pane ">Poin Berlipat</h1>
+                    <h5 class="tab-pane2 lg:pb-0 pb-10 ">Kumpulkan poin tiap belanja di berbagai merchant bertanda OVO Zone</h5>
+                    <a href="# " class="btn btn-primary button2cust ">Selengkapnya</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-icon py-10 ">
+        <div class="text-wrapper pb-5 ">
+            <div class="flex text-center justify-center items-center ">
+                <h1 class="merchant-text ">Merchants</h1>
+            </div>
+        </div>
+        <div class="swiper mySwiper ">
+            <div class="swiper-wrapper ">
+                <a href="# " class="swiper-slide ">
+                    <img src="src/home-icon.png " alt=" " class="swiperimg ">
+                </a>
+                <a href="# " class="swiper-slide ">
+                    <img src="src/home-icon.png " alt=" ">
+                </a>
+                <a href="# " class="swiper-slide ">
+                    <img src="src/home-icon.png " alt=" ">
+                </a>
+                <a href="# " class="swiper-slide ">
+                    <img src="src/home-icon.png " alt=" ">
+                </a>
+                <a href="# " class="swiper-slide ">
+                    <img src="src/home-icon.png " alt=" ">
+                </a>
+                <a href="# " class="swiper-slide ">
+                    <img src="src/home-icon.png " alt=" ">
+                </a>
+                <a href="# " class="swiper-slide ">
+                    <img src="src/home-icon.png " alt=" ">
+                </a>
+                <a href="# " class="swiper-slide ">
+                    <img src="src/home-icon.png " alt=" ">
+                </a>
+                <a href="# " class="swiper-slide ">
+                    <img src="src/home-icon.png " alt=" ">
+                </a>
+                <a href="# " class="swiper-slide ">
+                    <img src="src/home-icon.png " alt=" ">
+                </a>
+                <a href="# " class="swiper-slide ">
+                    <img src="src/home-icon.png " alt=" ">
+                </a>
+                <a href="# " class="swiper-slide ">
+                    <img src="src/home-icon.png " alt=" ">
+                </a>
+            </div>
+
+        </div>
+        <div class="flex justify-center w-full ">
+            <a href="# " class="btn btn-tersier mt-5 ">Lihat Semua Merchant Ovo</a></div>
+    </section>
+    <section class="section-5 sm:mt-10 ">
+        <div class="article-wrapper sm:w-9/12 mx-auto flex justify-center flex-wrap sm:flex-nowrap ">
+
+            <div class="ovo-article-card ">
+                <a href="# ">
+                    <div class="ovo-article-img ">
+                        <img src="src/3-tips-menghindari-kutukan-tgl-tua.jpg " alt=" ">
+                    </div>
+                    <div class="ovo-article-text ">
+                        <h5>3 Tips Menghindari kutukan ‘Tanggal Tua</h5>
+                        <h6>OVO Finance</h6>
+                    </div>
+                </a>
+            </div>
+
+            <div class="ovo-article-card ">
+                <a href="# ">
+                    <div class="ovo-article-img ">
+                        <img src="src/article-agoda.jpg" alt=" ">
+                    </div>
+                    <div class="ovo-article-text ">
+                        <h5>3 Tips Menghindari kutukan ‘Tanggal Tua</h5>
+                        <h6>OVO Finance</h6>
+                    </div>
+                </a>
+            </div>
+            <div class="ovo-article-card ">
+                <a href="# ">
+                    <div class="ovo-article-img ">
+                        <img src="src/article-cinemaxx.jpg" alt=" ">
+                    </div>
+                    <div class="ovo-article-text ">
+                        <h5>3 Tips Menghindari kutukan ‘Tanggal Tua</h5>
+                        <h6>OVO Finance</h6>
+                    </div>
+            </div>
+            </a>
+        </div>
+    </section>
+
+    <footer class="relative bg-blueGray-200 pt-8 pb-6 ">
+        <div class="container mx-auto lg:px-4 ">
+            <div class="flex flex-wrap text-left lg:text-left ">
+                <div class="w-full lg:w-6/12 px-4 ">
+                    <h4 class="text-3xl fonat-semibold text-blueGray-700 ">Let's keep in touch!</h4>
+                    <h5 class="text-lg mt-0 mb-2 text-blueGray-600 ">
+                        Find us on any of these platforms, we respond 1-2 business days.
+                    </h5>
+                    <div class="mt-6 lg:mb-0 mb-6 ">
+                        <button class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 " type="button ">
+                        <i class="fab fa-twitter "></i></button><button class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 "
+                            type="button ">
+                        <i class="fab fa-facebook-square "></i></button><button class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 " type="button ">
+                        <i class="fab fa-dribbble "></i></button><button class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 " type="button ">
+                        <i class="fab fa-github "></i>
+                    </button>
+                    </div>
+                </div>
+                <div class="w-full lg:w-6/12 px-4 ">
+                    <div class="flex flex-wrap items-top mb-6 ">
+                        <div class="w-full lg:w-4/12 px-4 ml-auto ">
+                            <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2 ">Useful
+                            Links</span>
+                            <ul class="list-unstyled ">
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm " href="https://www.creative-tim.com/presentation?ref=njs-profile ">About Us</a>
+                                </li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm " href="https://blog.creative-tim.com?ref=njs-profile ">Blog</a>
+                                </li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm " href="https://www.github.com/creativetimofficial?ref=njs-profile ">Github</a>
+                                </li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm " href="https://www.creative-tim.com/bootstrap-themes/free?ref=njs-profile ">Free
+                                    Products</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="w-full lg:w-4/12 px-4 ">
+                            <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2 ">Other
+                            Resources</span>
+                            <ul class="list-unstyled ">
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm " href="https://github.com/creativetimofficial/notus-js/blob/main/LICENSE.md?ref=njs-profile ">MIT
+                                    License</a>
+                                </li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm " href="https://creative-tim.com/terms?ref=njs-profile ">Terms &amp; Conditions</a>
+                                </li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm " href="https://creative-tim.com/privacy?ref=njs-profile ">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm " href="https://creative-tim.com/contact-us?ref=njs-profile ">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-blueGray-300 ">
+            <div class="flex flex-wrap items-center md:justify-between justify-center ">
+                <div class="w-full md:w-4/12 px-4 mx-auto text-center ">
+                    <div class="text-sm text-blueGray-500 font-semibold py-1 ">
+                        Created By Adrsvn 2021.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="tailwind.config.js "></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js "></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script>
+    const navbar = document.querySelector(".navbar");
+
+    window.addEventListener("scroll", () => {
+
+        if (window.pageYOffset > 123) {
+            navbar.classList.add("fixed");
+        } else {
+            navbar.classList.remove("fixed");
+        }
+    });
+
+    $(".toggler").click(function() {
+        $(".sidebar").addClass("is-active");
+        $("body").addClass("customjs");
+
+        $(".navbar").removeClass("fixed");
+        $(".overlay").addClass("overlay-active");
+    });
+    $("#cancel").click(function() {
+        $(".sidebar").removeClass("is-active");
+        $("body").removeClass("customjs");
+        $(".overlay").removeClass("overlay-active");
+        $(".navbar").addClass("fixed");
+    });
+    $("#overlay").click(function() {
+        $(".sidebar").removeClass("is-active");
+        $("body").removeClass("customjs");
+        $(".overlay").removeClass("overlay-active");
+        $(".navbar").addClass("fixed");
+    });
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 6,
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+    });
+    var x = window.matchMedia("(max-width: 555px)")
+
+    function myFunction(x) {
+        if (x.matches) {
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 3,
+            });
+        }
+    }
+    myFunction(x) // Call listener function at run time
+    x.addListener(myFunction) // Attach listener function on state changes
+</script>
+
+</html>
